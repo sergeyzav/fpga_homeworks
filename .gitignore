@@ -2,10 +2,11 @@
 *.log
 *.jou
 *.str
+*.dmp
 *.pb
 .Xil/
 
-build/
+build/*
 
 *.vcd
 *.fst
