@@ -1,0 +1,14 @@
+
+*.log
+*.jou
+*.str
+*.pb
+.Xil/
+
+build/
+
+*.vcd
+*.fst
+
+.DS_Store
+Thumbs.db
