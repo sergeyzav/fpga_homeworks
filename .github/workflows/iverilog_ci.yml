@@ -1,0 +1,27 @@
+name: Iverilog CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Icarus Verilog
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog
+
+      - name: Make simulation script executable
+        run: |
+          sed -i 's/\r$//' run_sims.sh
+          chmod +x run_sims.sh
+
+      - name: Run Simulations
+        run: ./run_sims.sh
