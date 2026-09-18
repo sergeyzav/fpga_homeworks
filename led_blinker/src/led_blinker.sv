@@ -1,32 +1,29 @@
 `timescale 1ns / 1ps
 
-module led_blinker (
+module led_blinker #(
+    parameter DEBOUNCE_WIDTH = 19
+) (
      input logic i_clk,
-     output logic o_led
+     input logic i_btn, 
+     output logic o_led = 1'b0
     );
 
-    localparam int COUNT_W = 27;
+    logic btn_debounced;
+    logic btn_prev = 1'b0;
 
-    logic [3:0]           rst_sr = '0;
-    logic                 rst;
-    logic [COUNT_W-1:0]   count;
-
-    assign rst = ~&rst_sr;
+    debouncer #(.WIDTH(DEBOUNCE_WIDTH)) debouncer_inst (
+        .i_clk(i_clk),
+        .i_rst(1'b0),
+        .i_btn(i_btn),
+        .o_btn(btn_debounced)
+    );
 
     always_ff @(posedge i_clk) begin
-        rst_sr <= {rst_sr[2:0], 1'b1};
+        btn_prev <= btn_debounced;
 
-        if (rst)
-            count <= '0;
-        else
-            count <= count + 1;
-    end
-
-    always_ff @(negedge i_clk) begin
-        if (rst)
-            o_led <= 1'b0;
-        else if (count == '0)
+        if (btn_debounced && !btn_prev) begin
             o_led <= ~o_led;
+        end
     end
 
 endmodule
