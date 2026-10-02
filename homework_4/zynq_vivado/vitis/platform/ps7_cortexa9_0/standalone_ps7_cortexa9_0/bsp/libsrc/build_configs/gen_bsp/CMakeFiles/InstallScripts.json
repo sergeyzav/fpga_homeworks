@@ -1,0 +1,29 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/common/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/common/intr/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/common/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/common/gcc/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/cortexa9/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/arm/cortexa9/gcc/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/devcfg/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/dmaps/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scutimer/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/tmrctr/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/cmake_install.cmake",
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
