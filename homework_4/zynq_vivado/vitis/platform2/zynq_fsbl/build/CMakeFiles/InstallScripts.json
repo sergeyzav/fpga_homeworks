@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/sergo/vivprojects/project_test_bd/vitis/platform2/zynq_fsbl/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

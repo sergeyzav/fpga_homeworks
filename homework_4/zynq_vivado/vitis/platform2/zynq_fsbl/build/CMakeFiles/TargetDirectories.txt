@@ -1,0 +1,4 @@
+C:/Users/sergo/vivprojects/project_test_bd/vitis/platform2/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Users/sergo/vivprojects/project_test_bd/vitis/platform2/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+C:/Users/sergo/vivprojects/project_test_bd/vitis/platform2/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Users/sergo/vivprojects/project_test_bd/vitis/platform2/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,3 @@
-
 *.log
 *.jou
 *.str
@@ -13,3 +12,56 @@ build/*
 
 .DS_Store
 Thumbs.db
+
+# ---- Vivado ----
+*.runs/
+*.gen/
+*.cache/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.srcs/sources_1/bd/*/hdl/
+*.Xil/
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+vivado_pid*.debug
+webtalk*.log
+webtalk*.jou
+
+# ---- Vitis (Unified IDE) ----
+build-vitis/
+build-vivado/
+**/Debug/
+**/Release/
+*.o
+*.elf.bak
+
+# ---- Загальне ----
+*.Xil/
+*.sw_folder_convert/
+
+# Ignore build output directory
+/build
+/export
+
+# Ignore object files and dependent files
+*.o
+*.d
+
+#Ignore logs folder and log files
+/logs
+*.log
+
+#Ignore lock files
+*.lock
+
+*.bin
+*.pdi
+
+*.vitisWorkspace.json
+
+_ide/logs
+_ide/.wsdata
