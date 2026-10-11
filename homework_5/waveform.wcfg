@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_microblaze_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_datamover_pkg" />
+            <top_module name="axi_dma_pkg" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mdm_funcs" />
+            <top_module name="tb_microblaze_wrapper" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="25,636.915000 us"></ZoomStartTime>
+      <ZoomEndTime time="25,780.915001 us"></ZoomEndTime>
+      <Cursor1Time time="25,660.915000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="74" />
+   <wvobject fp_name="group9" type="group">
+      <obj_property name="label">Main Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_microblaze_wrapper/clk_100" type="logic">
+         <obj_property name="ElementShortName">clk_100</obj_property>
+         <obj_property name="ObjectShortName">clk_100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/aclk_external" type="logic">
+         <obj_property name="ElementShortName">aclk_external</obj_property>
+         <obj_property name="ObjectShortName">aclk_external</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/reset_rtl" type="logic">
+         <obj_property name="ElementShortName">reset_rtl</obj_property>
+         <obj_property name="ObjectShortName">reset_rtl</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/gpio_btn_tri_i" type="logic">
+         <obj_property name="ElementShortName">gpio_btn_tri_i</obj_property>
+         <obj_property name="ObjectShortName">gpio_btn_tri_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/data" type="array">
+         <obj_property name="ElementShortName">data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group10" type="group">
+      <obj_property name="label">picture fifo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/enabled" type="logic">
+      <obj_property name="ElementShortName">enabled</obj_property>
+      <obj_property name="ObjectShortName">enabled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/s_axis_tready_int" type="logic">
+      <obj_property name="ElementShortName">s_axis_tready_int</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/data_last" type="logic">
+      <obj_property name="ElementShortName">data_last</obj_property>
+      <obj_property name="ObjectShortName">data_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/final_data" type="array">
+      <obj_property name="ElementShortName">final_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">final_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/m_axis_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/m_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/m_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/m_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="group35" type="group">
+      <obj_property name="label">DMA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_aclk" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_aclk" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_aclk</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/axi_resetn" type="logic">
+         <obj_property name="ElementShortName">axi_resetn</obj_property>
+         <obj_property name="ObjectShortName">axi_resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awaddr" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_awaddr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awaddr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_wvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_wready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_wdata" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_bresp" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_bvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_bready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_arvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_arready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_araddr" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_araddr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_araddr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_rvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_rready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_rdata" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_rresp" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awaddr" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awlen" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awsize" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awburst" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awprot" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awcache" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_awvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_awready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wdata" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wstrb" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wlast" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wlast</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_bresp" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_bvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_bvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_bready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_bready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s2mm_prmry_reset_out_n" type="logic">
+         <obj_property name="ElementShortName">s2mm_prmry_reset_out_n</obj_property>
+         <obj_property name="ObjectShortName">s2mm_prmry_reset_out_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axis_s2mm_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_s2mm_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axis_s2mm_tkeep" type="array">
+         <obj_property name="ElementShortName">s_axis_s2mm_tkeep[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tkeep[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axis_s2mm_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axis_s2mm_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axis_s2mm_tlast" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s2mm_introut" type="logic">
+         <obj_property name="ElementShortName">s2mm_introut</obj_property>
+         <obj_property name="ObjectShortName">s2mm_introut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/axi_dma_tstvec" type="array">
+         <obj_property name="ElementShortName">axi_dma_tstvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_dma_tstvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/M_AXI_S2MM" type="protoinst">
+         <obj_property name="ElementShortName">M_AXI_S2MM</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_S2MM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/S_AXIS_S2MM" type="protoinst">
+         <obj_property name="ElementShortName">S_AXIS_S2MM</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/S_AXI_LITE" type="protoinst">
+         <obj_property name="ElementShortName">S_AXI_LITE</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_LITE</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group132" type="group">
+      <obj_property name="label">ram</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_aclk" type="logic">
+         <obj_property name="ElementShortName">s_axi_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_aresetn" type="logic">
+         <obj_property name="ElementShortName">s_axi_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aresetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_awaddr" type="array">
+         <obj_property name="ElementShortName">s_axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_awlen" type="array">
+         <obj_property name="ElementShortName">s_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_awsize" type="array">
+         <obj_property name="ElementShortName">s_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_awburst" type="array">
+         <obj_property name="ElementShortName">s_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_awvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_awready" type="logic">
+         <obj_property name="ElementShortName">s_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_wdata" type="array">
+         <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_wstrb" type="array">
+         <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_wlast" type="logic">
+         <obj_property name="ElementShortName">s_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_wvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_wready" type="logic">
+         <obj_property name="ElementShortName">s_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_bresp" type="array">
+         <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_bvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_bready" type="logic">
+         <obj_property name="ElementShortName">s_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_araddr" type="array">
+         <obj_property name="ElementShortName">s_axi_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_arlen" type="array">
+         <obj_property name="ElementShortName">s_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_arsize" type="array">
+         <obj_property name="ElementShortName">s_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_arburst" type="array">
+         <obj_property name="ElementShortName">s_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_arvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_arready" type="logic">
+         <obj_property name="ElementShortName">s_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_rdata" type="array">
+         <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_rlast" type="logic">
+         <obj_property name="ElementShortName">s_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_rresp" type="array">
+         <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_rvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi_rready" type="logic">
+         <obj_property name="ElementShortName">s_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_full_ram_0/s_axi" type="protoinst">
+         <obj_property name="ElementShortName">s_axi</obj_property>
+         <obj_property name="ObjectShortName">s_axi</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider191">
+      <obj_property name="label">RESET</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/clk_wiz_1/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/rst_clk_wiz_1_100M/mb_reset" type="logic">
+      <obj_property name="ElementShortName">mb_reset</obj_property>
+      <obj_property name="ObjectShortName">mb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/rst_clk_wiz_1_100M/peripheral_aresetn" type="array">
+      <obj_property name="ElementShortName">peripheral_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">peripheral_aresetn[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider195">
+      <obj_property name="label">CPU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/microblaze_0/Instr_Addr" type="array">
+      <obj_property name="ElementShortName">Instr_Addr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Instr_Addr[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider197">
+      <obj_property name="label">GPIO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_gpio_btn/gpio_io_i" type="array">
+      <obj_property name="ElementShortName">gpio_io_i[0:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_io_i[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_gpio_btn/gpio2_io_o" type="array">
+      <obj_property name="ElementShortName">gpio2_io_o[0:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio2_io_o[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider200">
+      <obj_property name="label">DMA REGS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_lite_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awready" type="logic">
+      <obj_property name="ElementShortName">s_axi_lite_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awaddr" type="array">
+      <obj_property name="ElementShortName">s_axi_lite_awaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awaddr[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_wdata" type="array">
+      <obj_property name="ElementShortName">s_axi_lite_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider205">
+      <obj_property name="label">STREAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/s_axis_tready_int" type="logic">
+      <obj_property name="ElementShortName">s_axis_tready_int</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready_int</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider211">
+      <obj_property name="label">DMA -&gt; RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awready" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_awready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awaddr" type="array">
+      <obj_property name="ElementShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awlen" type="array">
+      <obj_property name="ElementShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wready" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_wready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wlast" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_wlast</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_bvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_bvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_bresp" type="array">
+      <obj_property name="ElementShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider225">
+      <obj_property name="label">RESET</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/clk_wiz_1/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/rst_clk_wiz_1_100M/mb_reset" type="logic">
+      <obj_property name="ElementShortName">mb_reset</obj_property>
+      <obj_property name="ObjectShortName">mb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/rst_clk_wiz_1_100M/peripheral_aresetn" type="array">
+      <obj_property name="ElementShortName">peripheral_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">peripheral_aresetn[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider229">
+      <obj_property name="label">CPU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/microblaze_0/Instr_Addr" type="array">
+      <obj_property name="ElementShortName">Instr_Addr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Instr_Addr[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider231">
+      <obj_property name="label">GPIO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_gpio_btn/gpio_io_i" type="array">
+      <obj_property name="ElementShortName">gpio_io_i[0:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_io_i[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_gpio_btn/gpio2_io_o" type="array">
+      <obj_property name="ElementShortName">gpio2_io_o[0:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio2_io_o[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider234">
+      <obj_property name="label">DMA REGS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_lite_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awready" type="logic">
+      <obj_property name="ElementShortName">s_axi_lite_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_awaddr" type="array">
+      <obj_property name="ElementShortName">s_axi_lite_awaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awaddr[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/s_axi_lite_wdata" type="array">
+      <obj_property name="ElementShortName">s_axi_lite_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider239">
+      <obj_property name="label">STREAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/m_axis_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_picture_frame_tx_0/inst/s_axis_tready_int" type="logic">
+      <obj_property name="ElementShortName">s_axis_tready_int</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready_int</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider245">
+      <obj_property name="label">DMA -&gt; RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awready" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_awready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awaddr" type="array">
+      <obj_property name="ElementShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_awlen" type="array">
+      <obj_property name="ElementShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wready" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_wready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_wlast" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_wlast</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_wlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_bvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_s2mm_bvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_microblaze_wrapper/dut/microblaze_i/axi_dma_0/m_axi_s2mm_bresp" type="array">
+      <obj_property name="ElementShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+   </wvobject>
+</wave_config>
