@@ -2,14 +2,16 @@
 
 module tb_led_blinker;
 
-    logic clk;
-    logic btn;
-    logic led;
+    reg clk;
+    reg btn;
+    wire led;
+    reg rst;
 
     led_blinker #(
-        .DEBOUNCE_WIDTH(4)
-    ) uut (
+        .DEBOUNCE_WIDTH(2)
+    ) dut (
         .i_clk(clk),
+        .i_rst(rst),
         .i_btn(btn),
         .o_led(led)
     );
@@ -18,8 +20,13 @@ module tb_led_blinker;
 
     initial begin
         clk = 0;
+        rst = 1;
         btn = 0;
         
+        #20;
+
+        rst = 0;
+
         #20;
 
         if (led !== 0)
@@ -28,10 +35,13 @@ module tb_led_blinker;
             $display("PASS: Initial LED value is 0");
 
         $display("Simulating Button Press 1 (with contact bounce)...");
-        btn = 1; #10;
-        btn = 0; #20; 
-        btn = 1; #15; 
-        btn = 0; #10; 
+        btn = 0; #10;
+        btn = 1; #20; 
+        btn = 0; #15; 
+        btn = 1; #10; 
+        
+        btn = 0;
+        #250;
         
         btn = 1;
         #250;
