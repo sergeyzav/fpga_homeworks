@@ -7,6 +7,19 @@
 .Xil/
 
 build/*
+final_project/build/
+final_project/research/
+final_project/hw/mylibrary/zavadi_rf_capture/tb/
+final_project/hw/mylibrary/zavadi_rf_capture/dev_project.tcl
+
+# Vivado: PS7 summary written next to the project, simulator output
+final_project/hw/zynq_project/NA/
+xsim.dir/
+*.wdb
+
+# Python
+__pycache__/
+*.pyc
 
 *.vcd
 *.fst
