@@ -174,3 +174,18 @@ IP пакується скриптом [`zavadi_rf_capture_ip.tcl`](hw/mylibrary
 ![Таймінг після](doc/timing_report_after_tuning.png)
 
 Проєкт вкладається в час: і setup, і hold додатні.
+## Як розгорнути з нуля
+
+Усе збирається скриптами. Скрипт пакує IP ADI і мій, створює проєкт із block design, проганяє implementation і кладе `build/system_top.xsa`:
+
+```
+cd hw/zynq_project
+vivado -mode batch -source create_project.tcl -tclargs build
+```
+
+Потім Vitis, з папки `final_project`. Він створює платформу з `.xsa` і збирає C-додаток у `build/vitis`:
+
+```
+vitis -s sw/build.py
+```
+
