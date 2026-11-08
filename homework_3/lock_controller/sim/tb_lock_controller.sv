@@ -16,7 +16,7 @@ module tb_lock_controller;
 
     always #5 clk = ~clk;
 
-    task automatic check_locker(input state, input expected_led, input string name);
+    task automatic check_locker(input [1:0] state, input expected_led, input string name);
         if (state !== lc.current_state || expected_led !== unlocked_led)
             $error("Fail %s expected_state=%d, got_state=%d; expected_led=%d, got_led=%d;", name, state, lc.current_state, expected_led, unlocked_led);
         else

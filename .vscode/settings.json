@@ -1,0 +1,15 @@
+{
+  // Verilog-HDL/SystemVerilog extension (mshr-h.veriloghdl): lint on save with Verilator.
+  // Runs in the file's folder; -y lets it find modules from src/ when you edit a testbench.
+  "verilog.linting.linter": "verilator",
+  "verilog.linting.verilator.runAtFileLocation": true,
+  "verilog.linting.verilator.arguments": "--timing -Wno-fatal -Wno-DECLFILENAME -Wno-MULTITOP -y . -y ../src",
+
+  "files.associations": {
+    "*.sv": "systemverilog",
+    "*.svh": "systemverilog",
+    "*.v": "verilog"
+  },
+  "[verilog]": { "editor.tabSize": 4, "editor.insertSpaces": true },
+  "[systemverilog]": { "editor.tabSize": 4, "editor.insertSpaces": true }
+}

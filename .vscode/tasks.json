@@ -1,0 +1,82 @@
+{
+  // Run any of these from a file inside a project (a folder that has sim/).
+  // ⇧⌘B = "Sim: run + waves". Others: ⌘⇧P → "Tasks: Run Task".
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sim: run + waves",
+      "detail": "Compile with Icarus, simulate, open the waveform in Surfer",
+      "type": "shell",
+      "command": "${workspaceFolder}/sim.sh",
+      "args": ["${file}", "--waves"],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": [
+        {
+          "owner": "iverilog",
+          "fileLocation": "autoDetect",
+          "pattern": { "regexp": "^(.+?):(\\d+): (error|warning|sorry): (.*)$", "file": 1, "line": 2, "severity": 3, "message": 4 }
+        },
+        {
+          "owner": "iverilog",
+          "fileLocation": "autoDetect",
+          "severity": "error",
+          "pattern": { "regexp": "^(.+?):(\\d+): (syntax error.*)$", "file": 1, "line": 2, "message": 3 }
+        }
+      ]
+    },
+    {
+      "label": "Sim: run",
+      "detail": "Compile and simulate, no waveform window",
+      "type": "shell",
+      "command": "${workspaceFolder}/sim.sh",
+      "args": ["${file}"],
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": [
+        {
+          "owner": "iverilog",
+          "fileLocation": "autoDetect",
+          "pattern": { "regexp": "^(.+?):(\\d+): (error|warning|sorry): (.*)$", "file": 1, "line": 2, "severity": 3, "message": 4 }
+        },
+        {
+          "owner": "iverilog",
+          "fileLocation": "autoDetect",
+          "severity": "error",
+          "pattern": { "regexp": "^(.+?):(\\d+): (syntax error.*)$", "file": 1, "line": 2, "message": 3 }
+        }
+      ]
+    },
+    {
+      "label": "Sim: lint (Verilator)",
+      "detail": "Check the whole project: width mismatches, latches, unused signals",
+      "type": "shell",
+      "command": "${workspaceFolder}/sim.sh",
+      "args": ["${file}", "--lint"],
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": [
+        {
+          "owner": "verilator",
+          "fileLocation": "autoDetect",
+          "severity": "warning",
+          "pattern": { "regexp": "^%Warning(?:-[A-Z0-9_]+)?: (.+?):(\\d+):(\\d+): (.*)$", "file": 1, "line": 2, "column": 3, "message": 4 }
+        },
+        {
+          "owner": "verilator",
+          "fileLocation": "autoDetect",
+          "severity": "error",
+          "pattern": { "regexp": "^%Error(?:-[A-Z0-9_]+)?: (.+?):(\\d+):(\\d+): (.*)$", "file": 1, "line": 2, "column": 3, "message": 4 }
+        }
+      ]
+    },
+    {
+      "label": "Sim: open waves",
+      "detail": "Open the last waveform of this project in Surfer",
+      "type": "shell",
+      "command": "dir=\"${fileDirname}\"; while [ \"$dir\" != / ] && [ ! -d \"$dir/sim\" ]; do dir=$(dirname \"$dir\"); done; nohup surfer \"$dir/sim_build/wave.fst\" >/dev/null 2>&1 &",
+      "presentation": { "reveal": "silent" },
+      "problemMatcher": []
+    }
+  ]
+}
