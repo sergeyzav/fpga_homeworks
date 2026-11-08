@@ -41,13 +41,21 @@ fi
 PROJ="$DIR"
 BUILD="$PROJ/sim_build"
 
-# Sources: every .sv/.v in the project except build output.
-FILES=$(find "$PROJ" -type f \( -name "*.sv" -o -name "*.v" \) -not -path "$BUILD/*" | sort)
+# Sources: .sv/.v from src/, ip/ (e.g. HLS output) and sim/ - same rule as run_sims.sh.
+FILES=""
+for D in src ip sim; do
+    if [ -d "$PROJ/$D" ]; then
+        FILES="$FILES $(find "$PROJ/$D" -type f \( -name "*.sv" -o -name "*.v" \) | sort)"
+    fi
+done
 
-# Top module: first module declared in sim/tb_*.sv (or sim/*.sv).
+# Top module: first module declared in a tb_*.sv / *_tb.sv under sim/ (or any .sv there).
 if [ -z "$TOP" ]; then
-    TB_FILE=$(ls "$PROJ"/sim/tb_*.sv "$PROJ"/sim/*.sv 2>/dev/null | head -1)
-    TOP=$(sed -nE 's/^[[:space:]]*module[[:space:]]+([A-Za-z_][A-Za-z0-9_]*).*/\1/p' "$TB_FILE" | head -1)
+    TB_FILE=$( (find "$PROJ/sim" -type f \( -name "tb_*.sv" -o -name "*_tb.sv" \); \
+                find "$PROJ/sim" -type f -name "*.sv") | head -1)
+    if [ -n "$TB_FILE" ]; then
+        TOP=$(sed -nE 's/^[[:space:]]*module[[:space:]]+([A-Za-z_][A-Za-z0-9_]*).*/\1/p' "$TB_FILE" | head -1)
+    fi
 fi
 if [ -z "$TOP" ]; then
     echo "Could not find the testbench top module in $PROJ/sim"

@@ -11,6 +11,12 @@ echo "========================================"
 
 FAILED_TESTS=()
 PASSED_TESTS=()
+SKIPPED_TESTS=()
+
+# Projects that cannot run in Icarus (they need Vivado-generated IP).
+SKIP_DIRS=(
+    "./homework_5/hw/mainproject"   # MicroBlaze block design
+)
 
 SIM_DIRS=$(find . -type d -name "sim" | sort)
 
@@ -22,16 +28,27 @@ fi
 for SIM_DIR in $SIM_DIRS; do
     PARENT_DIR=$(dirname "$SIM_DIR")
     PROJECT_NAME=$(basename "$PARENT_DIR")
-    
+
+    if [[ " ${SKIP_DIRS[*]} " == *" $PARENT_DIR "* ]]; then
+        echo ""
+        echo -e "${YELLOW}Skipping $PROJECT_NAME ($PARENT_DIR): needs Vivado${NC}"
+        SKIPPED_TESTS+=("$PROJECT_NAME")
+        continue
+    fi
+
     echo ""
     echo "========================================================================"
     echo "Processing project: $PROJECT_NAME ($PARENT_DIR)"
     echo "========================================================================"
     
+    # Design sources: src/ (hand-written) and ip/ (e.g. HLS-generated Verilog).
     SRC_FILES=""
-    if [ -d "$PARENT_DIR/src" ]; then
-        SRC_FILES=$(find "$PARENT_DIR/src" -type f \( -name "*.sv" -o -name "*.v" \) 2>/dev/null)
-    fi
+    for D in src ip; do
+        if [ -d "$PARENT_DIR/$D" ]; then
+            SRC_FILES="$SRC_FILES $(find "$PARENT_DIR/$D" -type f \( -name "*.sv" -o -name "*.v" \) 2>/dev/null)"
+        fi
+    done
+    SRC_FILES=$(echo $SRC_FILES)
     SIM_FILES=$(find "$PARENT_DIR/sim" -type f \( -name "*.sv" -o -name "*.v" \) 2>/dev/null)
     
     if [ -z "$SIM_FILES" ]; then
@@ -88,6 +105,9 @@ echo "========================================"
 echo "Simulation Summary"
 echo "========================================"
 echo -e "${GREEN}Passed (${#PASSED_TESTS[@]}): ${PASSED_TESTS[*]}${NC}"
+if [ ${#SKIPPED_TESTS[@]} -ne 0 ]; then
+    echo -e "${YELLOW}Skipped (${#SKIPPED_TESTS[@]}): ${SKIPPED_TESTS[*]}${NC}"
+fi
 
 if [ ${#FAILED_TESTS[@]} -ne 0 ]; then
     echo -e "${RED}Failed (${#FAILED_TESTS[@]}): ${FAILED_TESTS[*]}${NC}"
